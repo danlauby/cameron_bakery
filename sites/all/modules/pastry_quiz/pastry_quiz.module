@@ -115,11 +115,11 @@ function quiz_answer() {
     // echo '<pre>';
     // print_r($guilt);
     // echo '</pre>';
-  if ($guilt === 'Angel') {
+  if ($guilt === '1' || $where === '1' || $what === '1') {
     return '<h2>You are in denial but I respect your self assertiveness!</h2>';
-} else if ($where === 'Bar') {
+} else if ($where === '3' || $where === '4' || $where === '5' || $guilt === '2') {
     return "<h2>Your on the right track!</h2>";
-} else if ($what === 'Yes') {
+} else if ($what === '2' || $where ==='2') {
     return "<h2>It's a darn shame. Best of luck!</h2>";
 }
 }
